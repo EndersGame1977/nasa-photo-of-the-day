@@ -30,23 +30,24 @@ function App() {
       <iframe 
         id="inlineFrameExample"
         title="Inline Frame Example"
-        width="300"
-        height="200"
+        width="900"
+        height="600"
         src={pictures}>
       </iframe> 
       :
       <img 
-        alt="nasa pictures and video"
+        alt="nasa pictures and videos"
         src={pictures}
-        width="300"
-        height="200">
+        width="900"
+        height="600">
       </img>
       }
-      
-      <input 
-        onChange={e => setDatePicker(e.target.value)}
-        type="date"
-      />
+      <div>
+        <input 
+          onChange={e => setDatePicker(e.target.value)}
+          type="date"
+        />
+      </div>
     </div>
   );
 }
