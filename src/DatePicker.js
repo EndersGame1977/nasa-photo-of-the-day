@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function DatePicker() {
-const [date, setDate] = useState('');
-console.log(date);
+function DatePicker(props) {
+
     return (
         <div>
             <input 
-                onChange={e => setDate(e.target.value)}
-                value={date}
+                onChange={e => props.datePicker(e.target.value)}
                 type="date"
-
             />
         </div>
       );
